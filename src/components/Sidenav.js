@@ -1,4 +1,4 @@
-import { AppBar, Box, styled, Toolbar } from '@mui/material'
+import { AppBar, styled, Toolbar } from '@mui/material'
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -8,10 +8,11 @@ const Sidenav = () => {
 
   const StyledBox = styled('div')({
     display: "flex",
-    justifyContent: "space-between",
+    backgroundColor: '#2B4865',
     position: 'sticky',
     height: '100vh',
-    top: 0
+    top: 0,
+    flexDirection: 'column'
   })
   const Search = styled('div')(({ theme }) => ({
     backgroundColor: 'white',
@@ -27,13 +28,12 @@ const Sidenav = () => {
   return (
     <StyledBox flex={1} sx={{
       width: 300,
-    }
-    } >
-      <AppBar position='sticky'>
+    }} >
+      <AppBar position='sticky' sx={{ backgroundColor: '#0F3460' }}>
         <Toolbar >
           <Search>
-            <SearchIcon />
-            <InputBase placeholder='Search here' />
+            <SearchIcon sx={{ display: { xs: 'none', sm: 'block' } }} />
+            <InputBase placeholder='Search here...' />
           </Search>
         </Toolbar>
       </AppBar>

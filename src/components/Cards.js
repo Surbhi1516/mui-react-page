@@ -14,7 +14,7 @@ const Cards = () => {
   })
 
   return (
-    <StyledBox bgcolor="#D8D9CF" flex={6} p={2} >
+    <StyledBox bgcolor='#EEEEEE' flex={6} p={2} >
       <Card sx={{ maxWidth: '80%' }}>
         <CardHeader
           avatar={
