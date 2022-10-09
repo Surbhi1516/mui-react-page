@@ -14,10 +14,12 @@ const Cards = () => {
     justifyContent: 'center'
 
   })
-  // sx={{ maxWidth: '80%' }}
+  // p={4}
+  // sx={{ maxWidth: '85%' }}
+  // sx={{ maxWidth: {xs:'100%, sm:'85%'}}}
   return (
-    <StyledBox bgcolor='#EEEEEE' flex={6} p={4} >
-      <Card sx={{ maxWidth: '85%' }}>
+    <StyledBox bgcolor='#EEEEEE' flex={6} sx={{ padding: { xs: 1, sm: 3 } }}>
+      <Card sx={{ maxWidth: { xs: '100%', sm: '85%' } }}>
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -56,7 +58,7 @@ const Cards = () => {
         </CardActions>
 
       </Card>
-    </StyledBox>
+    </StyledBox >
   )
 }
 
