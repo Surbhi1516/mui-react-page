@@ -3,6 +3,7 @@ import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 
 import React from 'react'
+import ListItems from './ListItems';
 
 const Sidenav = () => {
 
@@ -37,6 +38,7 @@ const Sidenav = () => {
           </Search>
         </Toolbar>
       </AppBar>
+      <ListItems />
     </StyledBox >
 
   )
